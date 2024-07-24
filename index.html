@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./style.css">
+
+  <link href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css' rel='stylesheet'>
+  
+  <link rel="shortcut icon" type="image/x-icon" href="./Logo.png">
+  <title>SS Calcus</title>
+</head>
+<body>
+
+  <header>
+    
+    <h1>SS Price Management System... <a href=""><button class="reload" type="reset">Reload</button></a></h1>
+    
+  </header>
+
+  <section class="output">
+
+    <output class="output_field">Total Amount: ?</output>
+
+  </section>
+
+  <section class="container">
+
+    <div class="top_container">
+
+      <div class="round">
+        <select name="ss_round_pipe" id="round_pipe">
+          <option value="Round Pipe">Round Pipe</option>
+          <option value="1/4">1/4"</option>
+          <option value="3/8">3/8"</option>
+          <option value="1/2">1/2"</option>
+          <option value="5/8">5/8"</option>
+          <option value="3/4">3/4"</option>
+          <option value="7/8">7/8"</option>
+          <option value="1">1"</option>
+          <option value="11/4">11/4"</option>
+          <option value="11/2">11/2"</option>
+          <option value="13/4">13/4"</option>
+          <option value="2">2"</option>
+          <option value="21/4">21/4"</option>
+          <option value="21/2">21/2"</option>
+          <option value="3">3"</option>
+          <option value="4">4"</option>
+        </select>
+      </div>
+
+      <div class="box">
+        <select name="ss_box_pipe" id="box_pipe">
+          <option value="Box Pipe">Box Pipe</option>
+          <option value="3/8x3/8">3/8" x 3/8"</option>
+          <option value="1/2x1/2">1/2" x 1/2"</option>
+          <option value="5/8x5/8">5/8" x 5/8"</option>
+          <option value="3/4x3/4">3/4" x 3/4"</option>
+          <option value="1x1">1" x 1"</option>
+          <option value="11/4x11/4">11/4" x 11/4"</option>
+          <option value="11/2x11/2">11/2" x 11/2"</option>
+          <option value="2x2">2" x 2"</option>
+          <option value="21/2x21/2">21/2" x 21/2"</option>
+          <option value="3x3">3" x 3"</option>
+        </select>
+      </div>
+
+      <div class="rectangular">
+        <select name="ss_rectangular_pipe" id="rectangular_pipe">
+          <option value="Rectangular Pipe">Rectangular Pipe</option>
+          <option value="1/2x3/4">1/2" x 3/4"</option>
+          <option value="1/2x1">1/2" x 1"</option>
+          <option value="1/2x11/2">1/2" x 11/2"</option>
+          <option value="3/4x11/2">3/4" x 11/2"</option>
+          <option value="1x11/2">1" x 11/2"</option>
+          <option value="1/2x2">1/2" x 2"</option>
+          <option value="5/8x21/2">5/8" x 21/2"</option>
+          <option value="1/2x21/4">1/2" x 21/4"</option>
+          <option value="1x2">1" x 2"</option>
+          <option value="11/2x21/2">11/2" x 21/2"</option>
+          <option value="1x3">1" x 3"</option>
+          <option value="11/4x3">11/4" x 3"</option>
+          <option value="11/2x2">11/2" x 2"</option>
+          <option value="1x21/2">1" x 21/2"</option>
+          <option value="2x3">2" x 3"</option>
+          <option value="2x4">2" x 4"</option>
+          <option value="1/2x21/2">1/2" x 21/2"</option>
+          <option value="3x11/2">3" x 11/2"</option>
+        </select>
+      </div>
+
+    </div>
+
+    <div class="bottom_container">
+
+      <div class="round_size">
+        <select name="round_pipe_size" id="round_size" disabled>
+          <option value="Round Size">Round Size</option>
+        </select>
+      </div>
+
+      <div class="box_size">
+        <select name="box_pipe_size" id="box_size" disabled>
+          <option value="Box Size">Box Size</option>
+        </select>
+      </div>
+
+      <div class="rectangular_size">
+        <select name="rectangular_pipe_size" id="rectangular_size" disabled>
+          <option value="Rectangular Size">Rectangular Size</option>
+          <option value="0.4mm">0.4mm</option>
+          <option value="0.5mm">0.5mm</option>
+          <option value="0.6mm">0.6mm</option>
+          <option value="0.7mm">0.7mm</option>
+          <option value="0.8mm">0.8mm</option>
+          <option value="1.0mm">1.0mm</option>
+          <option value="1.2mm">1.2mm</option>
+          <option value="1.5mm">1.5mm</option>
+          <option value="2.0mm">2.0mm</option>
+          <option value="2.5mm">2.5mm</option>
+          <option value="3.0mm">3.0mm</option>
+        </select>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="need_items">
+
+    <div class="custom_need_items">
+      <button value="5" class="need_fit1">5F</button>
+      <button value="10" class="need_fit2">10F</button>
+      <button value="15" class="need_fit3">15F</button>
+      <button value="20" class="need_fit4">20F</button>
+    </div>
+
+    <div class="need_input">
+      <label for=""><i class="bi bi-123"></i></label>
+      <input class="input_need_value" type="number" placeholder="Enter The Fit Number..." />
+      <button class="calculate_btn">Calculate</button>
+    </div>
+
+    <div class="percentage">
+      <div class="sum">
+        <h4 class="add_percent_btn">Add Percent %</h4>
+        <button disabled value="10" class="plus_percent1">+10%</button>
+          <button disabled value="20" class="plus_percent2">+20%</button>
+        <button disabled value="30" class="plus_percent3">+30%</button>
+      </div>
+      <div class="sub">
+        <button disabled value="10" class="minus_percent1">-10%</button>
+        <button disabled value="20" class="minus_percent2">-20%</button>
+        <button disabled value="30" class="minus_percent3">-30%</button>
+      </div>
+    </div>
+
+  </section>
+  
+  <footer><p>©Copyright ©2024 All rights reserved | This template is made by Mostafizur •</p></footer>
+  
+  <script src="./js/data.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
